@@ -70,7 +70,8 @@ public class home_screen extends AppCompatActivity {
                     homebinding.drawerlayout.close();
 
                 } else if (id==R.id.about_menu) {
-                    Toast.makeText(getApplicationContext(),"About us",Toast.LENGTH_SHORT).show();
+                    Intent aboutus =  new Intent(home_screen.this, homescreen_navigationdrawer_aboutus.class);
+                    startActivity(aboutus);
                     homebinding.drawerlayout.close();
 
                 }else {
